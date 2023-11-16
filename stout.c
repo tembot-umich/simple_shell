@@ -4,7 +4,7 @@
  * _putchartr - writes the character c to stdout
  * @p: The character to print
  * Return: On success 1.
- * On error, -1 is returned, and errno is set appropriately.
+ * On error, -1 is returned, and errorno is set appropriately.
  */
 int _putchartr(char p)
 {
@@ -14,10 +14,6 @@ int _putchartr(char p)
  * _strincopy - copie a string
  * @est:char
  * @srcy:char
- * @m:int
- * This function copies up to 'n' characters from
- * the source string 'src' to the destination
- * string 'dest'. If the length of 'src' is
  * less than 'n', the remainder of 'dest' is filled with '\0'.
  *
  * Return:char
@@ -43,8 +39,7 @@ i = 0;
 
 /**
  * _strlength - lenght of string
- * @d:char
- * This function calculates the length of a null-terminated string 's'.
+ * @d:chr
  * Return:int
  */
 
@@ -62,8 +57,6 @@ return (i);
 /**
  * _strtol - convert to a int
  * @d:string
- * This function converts a string 'd' representing
- * an integer into an actual integer value.
  * Return:int
  */
 int _strtol(char *d)
@@ -88,9 +81,7 @@ int i, j, n, x;
 }
 /**
  * _puts - print a string
- * @stri:pointer char
- * This function prints a null-terminated
- * string followed by a newline character.
+ * @stri- chr
  * return:void
  */
 void _puts(char *stri)

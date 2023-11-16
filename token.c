@@ -3,8 +3,6 @@
  * see_delim - Checks If A Character Match Any Char *
  * @p: Character To Check
  * @stri: String To Check
- * This function checks if a character 'c' matches
- * any character in the string
  * Return: 1 Succes, 0 Failed
  */
 unsigned int see_delim(char p, const char *stri)
@@ -22,9 +20,7 @@ unsigned int see_delim(char p, const char *stri)
 /**
  * _stritoken - Token A String Into Token (strtrok)
  * @stri: String
- * @delim: Delimiter
- * This function tokenizes a string into
- * tokens using the specified delimiter characters
+ * @delim: Delimi
  * Return: Pointer To The Next Token Or NULL
  */
 char *_stritoken(char *stri, const char *delim)
