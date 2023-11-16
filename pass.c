@@ -2,13 +2,7 @@
 
 /**
  * _parsecmnd - Parse Line Of Input
- * @input:User Input To Parse
- * This function takes a line of user input and
- * tokenizes it into an array of strings.
- * It uses whitespace and newline characters as
- * delimiters to separate the input into tokens.
- * The tokens are stored in dynamically allocated
- * memory and returned as an array of strings.
+ * @input:User Input To Pasw
  *
  * Return: Array Of strings (token):Simple Shell
  */

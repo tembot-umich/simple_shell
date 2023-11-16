@@ -3,13 +3,6 @@
 /**
  * path_cmd -  Search In $PATH For Excutable Command
  * @cmd: Parsed Input
- * This function searches the directories specified
- * in the $PATH environment variable
- * for an executable command.
- * If the command is found, it updates the cmd parameter
- * with the full path of the executable and returns 0.
- * If the command is not found,
- * it returns 1.
  * Return: 1  Failure  0  Success.
  */
 int pathname_cmnd(char **cmd)
@@ -40,11 +33,6 @@ int pathname_cmnd(char **cmd)
  * create - Build Command
  * @element: Excutable Command
  * @content: Dirctory Conatining Command
- * This function constructs the full path of the
- * command by combining the directory
- * containing the command and the command itself.
- * It allocates memory for the full path
- * and returns it.
  * Return: Parsed Full Path Of Command Or NULL Case Failed
  */
 char *create(char *element, char *content)
@@ -69,12 +57,7 @@ char *create(char *element, char *content)
 }
 /**
  * get_environment - Gets The Value Of Enviroment Variable By Name
- * @title: Environment Variable Name
- * This function retrieves the value of an environment
- * variable given its name.
- * It searches through the environment variables array
- * to find the variable with the
- * specified name and returns its value.
+ * @title: Environment Variable
  *
  * Return: The Value of the Environment Variable Else NULL.
  */
