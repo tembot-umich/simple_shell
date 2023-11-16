@@ -81,7 +81,6 @@ char *_itoa(unsigned int m)
  *  array_reverse - Reverse Array
  * @array:Array To Reverse
  * @length:Length Of Array
- * This function calculates the number of digits in the given integer.
  *
  * Return: Void(Reverse Array)
  */

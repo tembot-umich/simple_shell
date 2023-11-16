@@ -1,13 +1,9 @@
 #include "shell.h"
 
 /**
- * record_display - Display History Of User Input Simple Shell
- * @c:Parsed Command
- * @s:Statue Of Last Excute
- * This function displays the history of user inputs
- * stored in the ".simple_shell_history" file.
- * It reads the file line by line and prefixes
- * each line with a counter and then prints it.
+ * record_display - outputs History Of User Input Simple Shell
+ * @c:Pased Command
+ * @s:State Of Last Excute
  * Return: 0 Succes -1 Fail
  */
 int record_display(__attribute__((unused))char **c, __attribute__((unused))int s)
@@ -41,10 +37,7 @@ int record_display(__attribute__((unused))char **c, __attribute__((unused))int s
 }
 /**
  * display_echo - Excute Normal Echo
- * @cmnd: Parsed Command
- * This function executes the "echo" command using fork and execve.
- * It creates a child process to execute the
- * command and waits for its completion.
+ * @cmnd: Pased Command
  * Return: 0 Succes -1 Fail
  */
 int display_echo(char **cmnd)

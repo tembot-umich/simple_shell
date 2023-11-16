@@ -1,14 +1,11 @@
 #include "shell.h"
 
 /**
- * end_bulletin - Exit Statue Shell
+ * end_bulletin - End Statue Shell
  * @cmnd: Parsed Command
- * @input: User Input
+ * @input: Input
  * @argv:Program Name
  * @p:Excute Count
- * This function handles the built-in command "exit" for the shell program.
- * It allows the user to exit the shell with a specific exit status
- * or the default status if no exit status is provided.
  * Return: Void (Exit Statue)
  */
 void  end_bulletin(char **cmnd, char *input, char **argv, int p)
@@ -40,12 +37,9 @@ void  end_bulletin(char **cmnd, char *input, char **argv, int p)
 
 
 /**
- * move_to_directory - Change Dirctorie
- * @cmnd: Parsed Command
+ * move_to_directory - Change Directory
+ * @cmnd: Pased Command
  * @ty: Statue Last Command Excuted
- * This function handles the built-in command change
- * directory for the shell program.
- * It allows the user to change the current working directory.
  * Return: 0 Succes 1 Failed
  */
 int move_directory(char **cmnd, __attribute__((unused))int ty)
@@ -76,11 +70,9 @@ int move_directory(char **cmnd, __attribute__((unused))int ty)
 	return (0);
 }
 /**
- * env_visualization - Display Enviroment Variable
+ * env_visualization - output Enviroment Variable
  * @cmnd:Parsed Command
- * ty:Statue of Last command Excuted
- * This function handles the built-in command "env"
- * to display environment variables for the shell program.
+ * ty:State of Last command Excuted
  * Return:Always 0
  */
 int env_visualization(__attribute__((unused)) char **cmnd, __attribute__((unused)) int ty)
@@ -97,11 +89,9 @@ size_t i;
 	return (0);
 }
 /**
- * show_help - Displaying Help For Builtin
- * @cmnd:Parsed Command
- * @ty: Statue Of Last Command Excuted
- * This function displays the content of a specified
- * file for the shell program.
+ * show_help - outputting Help For Builtin
+ * @cmnd:Pased Command
+ * @ty: Staue Of Last Command Excuted
  * Return: 0 Succes -1 Fail
  */
 int show_help(char **cmnd, __attribute__((unused))int ty)
@@ -129,12 +119,8 @@ int show_help(char **cmnd, __attribute__((unused))int ty)
 }
 /**
  * output_bulletin - Excute Echo Cases
- * @ty:Statue Of Last Command Excuted
- * @cmnd: Parsed Command
- * This function handles the built-in command "echo" for the shell program.
- * It prints text to the standard output.
- * It also has special handling for printing the exit status,
- * process ID, and PATH environment variable.
+ * @ty:State Of Last Command Excuted
+ * @cmnd: Pase comand
  * Return: Always 0 Or Excute Normal Echo
  */
 int output_bulletin(char **cmnd, int ty)

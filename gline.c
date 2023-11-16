@@ -2,13 +2,6 @@
 
 /**
 * get_line - Read The Input By User From Stdin
-* This function reads input from the user via standard input.
-* It dynamically allocates
-* memory to store the input and expands the buffer if needed.
-* The input is read until
-* a newline character is encountered or the
-* end-of-file (EOF) is reached.
-*
 * Return: Input
 */
 char *get_line()
@@ -55,14 +48,6 @@ char *buff = malloc(buffsize);
 /**
  * manage_hashtag - remove everything after #
  * @buffer: input;
- * This function takes an input string and
- * searches for the '#' character. If found,
- * it truncates the input string at the position
- * of the '#' character, effectively
- * removing everything after it.
- * This is useful for handling comments in the input.
- *
- * @buff: The input string to be modified.
  * Return:void
  */
 void manage_hashtag(char *buffer)

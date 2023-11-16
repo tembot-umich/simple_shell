@@ -1,17 +1,9 @@
 #include "shell.h"
 
 /**
- * manage_builtin - Handle Builtin Command
+ * manage_builtin - manage Builtin Command
  * @cmnd: Parsed Command
- * @kl:statue of last Excute
- * This function handles built-in shell commands
- * by comparing the given command
- * with a list of recognized built-in commands.
- * If a match is found, the
- * corresponding built-in function is executed.
- *
- * @cmd: The parsed command and its arguments.
- * @er: The status of the last executed command.
+ * @kl:state of last Excute
  * Return: -1 Fail 0 Succes (Return :Excute Builtin)
  */
 
@@ -38,23 +30,11 @@ int manage_builtin(char **cmnd, int kl)
 	return (-1);
 }
 /**
- * test_command - Excute Simple Shell Command (Fork,Wait,Excute)
- *
- * @cmd:Parsed Command
+ * test_command - terminateSimple Shell Command
+ * @cmd:Pased Command
  * @input: User Input
  * @c:Shell Excution Time Case of Command Not Found
  * @argv:Program Name
- * This function handles the execution of
- * non-built-in shell commands. It forks
- * a new process and attempts to execute the given command.
- * If the command is
- * not found, an error message is printed and the function returns -1.
- *
- * @cmd: The parsed command and its arguments.
- * @input: The original user input.
- * @c: The shell execution count.
- * @argv: The program name.
- *
  * Return: 1 Case Command Null -1 Wrong Command 0 Command Excuted
  */
 int test_command(char **cmd, char *input, int c, char **argv)
@@ -95,14 +75,7 @@ int test_command(char **cmd, char *input, int c, char **argv)
 }
 /**
  * signal_to_specify - Handle ^C
- * @signal:Captured Signal
- * This function is a signal handler specifically for the
- * SIGINT signal (usually
- * generated when the user presses Ctrl+C)
- * It's responsible for printing a new
- * shell prompt after the signal is captured.
- *
- * @signal: The captured signal
+ * @signal:Capturedd Signal
  * Return: Void
  */
 void signal_to_specify(int signal)

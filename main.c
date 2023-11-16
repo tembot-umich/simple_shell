@@ -3,11 +3,7 @@
 /**
  * main - Simple Shell (Hsh)
  * @argc: Argument Count
- * @argv:Argument Value
- * The main function initializes the simple shell,
- * reads and processes user input, and executes commands.
- * It also handles built-in commands and the exit
- * condition of the shell.
+ * @argv:Argumen
  * Return: Exit Value By Status
  */
 
@@ -54,7 +50,6 @@ int main(__attribute__((unused)) int argc, char **argv)
  * see_builtin - check builtin
  *
  * @cmnd:command to check
- * This function checks if a given command is a built-in command.
  * Return: 0 Succes -1 Fail
  */
 int see_builtin(char **cmnd)
@@ -82,10 +77,7 @@ int see_builtin(char **cmnd)
 }
 /**
  * configure_environment - Creat Array of Enviroment Variable
- * @environm: Array of Enviroment Variable
- * This function initializes an array to store environment
- * variables by duplicating the
- * environment variables from the system's "environ" array.
+ * @environment: Array of Enviroment Variable
  * Return: Void
  */
 void configure_environment(char **environm)

@@ -87,8 +87,6 @@ int string_compare(const char *d1, const char *d2, size_t m)
 /**
  * string_duplicate - Duplicate A String
  * @stri:String
- * This function duplicates a given string by
- * allocating memory for a new string and copying the characters.
  * Return: Duplicate String Failed Null
  */
 char *string_duplicate(char *stri)

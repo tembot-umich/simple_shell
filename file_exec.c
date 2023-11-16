@@ -1,17 +1,9 @@
 #include "shell.h"
 
 /**
- * read_content - Read Command From File
+ * read_content - Read Content From File
  * @filePath:Filename
  * @argv:Program Name
- * This function reads commands from
- * a file specified by `filename`. It reads each
- * line from the file, parses the command,
- * and executes it if necessary. The function
- * terminates when all lines in the file have been processed.
- *
- * @filename: The name of the file to read commands from.
- * @argv: The program name
  * Return: -1 or  0
  */
 
@@ -43,18 +35,8 @@ void read_content(char *filePath, char **argv)
  * respond_file - PARSE Check Command Fork Wait Excute in Line of File
  * @line: Line From A File
  * @counter:Error Counter
- * @fp:File Descriptor
- * @argv:Program Name
- * This function takes a line from a file,
- * parses the command, and executes it if necessary.
- * It handles built-in commands, external commands,
- * and also the "exit" command specific
- * to processing a file.
- *
- * @line: The line read from the file.
- * @counter: The error counter (for error reporting).
- * @fp: The file descriptor of the opened file.
- * @argv: The program name.
+ * @fp:File Descript
+ * @argv:Prog Name
  * Return : Excute A line void
  */
 void respond_file(char *line, int counter, FILE *fp, char **argv)
@@ -85,18 +67,6 @@ void respond_file(char *line, int counter, FILE *fp, char **argv)
  * @line: Line From A File
  * @cmnd: Parsed Command
  * @fd:File Descriptor
- * This function handles the "exit" command when
- * processing a line from a file. If no
- * argument is provided, it exits the program
- * with the current error number. If an
- * argument is provided, it attempts to convert
- * it to an integer and exits with that
- * status code. If the argument is not a valid integer,
- * an error message is printed.
- *
- * @cmnd: The parsed command.
- * @line: The line from the file.
- * @fd: The file descriptor of the opened file.
  * Return : Case Of Exit in A File Line
  */
 void end_bulletin_for_file(char **cmnd, char *line, FILE *fd)

@@ -2,9 +2,7 @@
 
 /**
  * record - Fill File By User Input
- * @entry: User Input
- * This function appends the user input to
- * a history file for tracking command history
+ * @entry: User Inpt
  * Return: -1 Fail 0 Succes
  */
 int record(char *entry)
@@ -31,8 +29,6 @@ int record(char *entry)
 /**
  * release_envi - Free Enviroment Variable Array
  * @envi:  Environment variables.
- * This function frees the memory allocated
- * for the array of environment variables.
  * Return: Void
  */
 void release_envi(char **envi)
